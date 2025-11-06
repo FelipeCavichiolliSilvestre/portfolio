@@ -23,6 +23,35 @@
 }
 
 @theme inline {
+  /* Typography */
+  --font-display: "Archivo Variable", sans-serif;
+  --font-header: "Archivo Variable", sans-serif;
+  --font-body: "DM Sans Variable", sans-serif;
+
+  --text-d1: 68px;
+  --text-d1--line-height: 72px;
+  --text-d2: 58px;
+  --text-d2--line-height: 64px;
+  --text-h1: 48px;
+  --text-h1--line-height: 52px;
+  --text-h2: 40px;
+  --text-h2--line-height: 44px;
+  --text-h3: 34px;
+  --text-h3--line-height: 36px;
+  --text-h4: 28px;
+  --text-h4--line-height: 32px;
+  --text-h5: 24px;
+  --text-h5--line-height: 28px;
+  --text-h6: 20px;
+  --text-h6--line-height: 24px;
+  --text-p1: 19px;
+  --text-p1--line-height: 22px;
+  --text-p2: 16px;
+  --text-p2--line-height: 20px;
+  --text-p3: 12px;
+  --text-p3--line-height: 16px;
+
+  /* https://www.neobrutalism.dev */
   --color-main: var(--main);
   --color-background: var(--background);
   --color-secondary-background: var(--secondary-background);
