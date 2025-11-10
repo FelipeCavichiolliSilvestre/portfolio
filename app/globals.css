@@ -5,20 +5,20 @@
 @import "@fontsource-variable/dm-sans";
 
 :root {
-  --background: oklch(95.16% 0.0242 343.23);
+  --background: oklch(95.31% 0.0496 169.04);
   --secondary-background: oklch(100% 0 0);
   --foreground: oklch(0% 0 0);
   --main-foreground: oklch(0% 0 0);
-  --main: oklch(71.5% 0.197 354.23);
+  --main: oklch(77.54% 0.1681 162.78);
   --border: oklch(0% 0 0);
   --ring: oklch(0% 0 0);
   --overlay: oklch(0% 0 0 / 0.8);
   --shadow: 2px 2px 0px 0px var(--border);
-  --chart-1: #fc64ab;
-  --chart-2: #facc00;
-  --chart-3: #ff7a05;
+  --chart-1: #00d696;
+  --chart-2: #7a83ff;
+  --chart-3: #facc00;
   --chart-4: #ff4d50;
-  --chart-5: #7a83ff;
+  --chart-5: #0099ff;
   --chart-active-dot: #000;
 }
 
@@ -83,8 +83,8 @@
   --font-weight-heading: 700;
 
   /* Marquee */
-  --animate-marquee: marquee 5s linear infinite;
-  --animate-marquee2: marquee2 5s linear infinite;
+  --animate-marquee: marquee 50s linear infinite;
+  --animate-marquee2: marquee2 50s linear infinite;
 
   @keyframes marquee {
     0% {
