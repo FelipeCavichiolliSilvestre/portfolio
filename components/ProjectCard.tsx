@@ -30,6 +30,7 @@ function ProjectCard(props: ProjectCardProps) {
         alt={bannerAlt}
         width={1600}
         height={800}
+        unoptimized
         className="w-full -mt-6 aspect-2"
       />
       <CardHeader>
