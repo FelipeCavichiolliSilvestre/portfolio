@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import type { Meta, StoryObj } from "@storybook/nextjs-vite";
 
 import { fn } from "storybook/test";
@@ -10,9 +11,9 @@ import {
   CardHeader,
   CardTitle,
 } from "./Card";
-import { Label } from "@radix-ui/react-dropdown-menu";
 import { Button } from "../Button";
-import { Input } from "../Input/Input";
+import { Input } from "../Input";
+import { Label } from "../Label";
 
 const meta = {
   title: "Atoms/Card",
@@ -85,7 +86,7 @@ export const Default: Story = {
 export const WithImage: Story = {
   render: (args) => (
     <Card className="max-w-md">
-      <img src="https://picsum.photos/200/100" className="w-full -mt-6" />
+      <img src="https://picsum.photos/800/400" className="w-full -mt-6" />
       <CardHeader>
         <CardTitle>Login to your account</CardTitle>
         <CardDescription>
