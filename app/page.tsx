@@ -1,8 +1,11 @@
+import { GithubIcon, LinkedinIcon } from "lucide-react";
 import { Navbar } from "@/components/Navbar";
 import { HeroBanner } from "@/components/HeroBanner";
 import { Marquee } from "@/components/ui/Marquee";
 import { Container } from "@/components/ui/Container";
 import { ProjectCard } from "@/components/ProjectCard";
+import { ContactCard } from "@/components/ContactCard";
+import { Button } from "@/components/ui/Button";
 
 export default function Home() {
   return (
@@ -47,6 +50,37 @@ export default function Home() {
               githubLink="https://github.com/FelipeCavichiolliSilvestre/portfolio"
               projectLink="#top"
             />
+          </div>
+        </section>
+      </Container>
+
+      <span id="contato" />
+      <Marquee items={Array(14).fill("Contato")} />
+
+      <Container
+        className="violet-theme bg-background flex flex-col justify-center items-center py-12 gap-6"
+        asChild
+      >
+        <section>
+          <ContactCard />
+
+          <div className="inline-flex flex-row gap-4">
+            <Button size="icon" asChild>
+              <a
+                href="https://github.com/FelipeCavichiolliSilvestre"
+                target="_blank"
+              >
+                <GithubIcon />
+              </a>
+            </Button>
+            <Button size="icon">
+              <a
+                href="https://www.linkedin.com/in/felipe-silvestre-004aa2216"
+                target="_blank"
+              >
+                <LinkedinIcon />
+              </a>
+            </Button>
           </div>
         </section>
       </Container>
