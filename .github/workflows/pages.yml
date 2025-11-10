@@ -1,0 +1,57 @@
+name: Build and Deploy
+on:
+  push:
+    branches: [ main ]
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  build:
+    name: Build NextJS & Upload artifact
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+  
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: yarn
+      
+      - name: Install dependencies
+        run: yarn install
+
+      - name: Build with Next.js
+        run: yarn build
+      
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+        with:
+          static_site_generator: next
+      
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: ./out
+  
+  deploy:
+    name: Deploy artifact to Github Pages
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write      # to deploy to Pages
+      id-token: write
+    needs: build
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
