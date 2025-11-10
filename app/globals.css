@@ -23,6 +23,13 @@
 }
 
 @theme inline {
+  /* Breakpoints */
+  --breakpoint-xm: 0;
+  --breakpoint-sm: 600px;
+  --breakpoint-md: 840px;
+  --breakpoint-lg: 1280px;
+  --breakpoint-xl: 1600px;
+
   /* Typography */
   --font-display: "Archivo Variable", sans-serif;
   --font-header: "Archivo Variable", sans-serif;
