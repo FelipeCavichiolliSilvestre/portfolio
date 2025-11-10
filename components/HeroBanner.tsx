@@ -29,6 +29,7 @@ export function HeroBanner() {
             height={400}
             src="/avatar.png"
             alt="Uma ilustração de uma pessoa com cabelos longos e moletom verde dentro de uma estrela estilziada"
+            unoptimized
             className="w-75 lg:w-90"
           ></Image>
         </div>
