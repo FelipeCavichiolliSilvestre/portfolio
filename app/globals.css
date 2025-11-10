@@ -22,6 +22,42 @@
   --chart-active-dot: #000;
 }
 
+.cyan-theme {
+  --background: oklch(94.61% 0.043 211.12);
+  --secondary-background: oklch(100% 0 0);
+  --foreground: oklch(0% 0 0);
+  --main-foreground: oklch(0% 0 0);
+  --main: oklch(76.89% 0.139164 219.13);
+  --border: oklch(0% 0 0);
+  --ring: oklch(0% 0 0);
+  --overlay: oklch(0% 0 0 / 0.8);
+  --shadow: 2px 2px 0px 0px var(--border);
+  --chart-1: #00c8f0;
+  --chart-2: #ff7a05;
+  --chart-3: #7a83ff;
+  --chart-4: #ff4d50;
+  --chart-5: #facc00;
+  --chart-active-dot: #000;
+}
+
+.violet-theme {
+  --background: oklch(93.88% 0.033 300.19);
+  --secondary-background: oklch(100% 0 0);
+  --foreground: oklch(0% 0 0);
+  --main-foreground: oklch(0% 0 0);
+  --main: oklch(70.28% 0.1753 295.36);
+  --border: oklch(0% 0 0);
+  --ring: oklch(0% 0 0);
+  --overlay: oklch(0% 0 0 / 0.8);
+  --shadow: 2px 2px 0px 0px var(--border);
+  --chart-1: #a985ff;
+  --chart-2: #00d696;
+  --chart-3: #facc00;
+  --chart-4: #ff4d50;
+  --chart-5: #0099ff;
+  --chart-active-dot: #000;
+}
+
 @theme inline {
   /* Breakpoints */
   --breakpoint-xm: 0;
