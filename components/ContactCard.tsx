@@ -56,7 +56,7 @@ function ContactCard() {
             <Label htmlFor="message">Mensagem</Label>
             <Textarea name="message" className="min-h-50" required />
           </div>
-          <div className="flex flex-row items-center justify-between">
+          <div className="flex flex-col-reverse gap-4 sm:flex-row sm:justify-between sm:items-center">
             <Typography>
               Prefere um email?{" "}
               <b className="text-main hover:underline">
