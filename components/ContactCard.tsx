@@ -18,7 +18,7 @@ function ContactCard() {
 
     try {
       setLoading(true);
-      await fetch("https://formsubmit.co/ajax/contato@felipesilvestre.dev", {
+      await fetch("https://formspree.io/f/mblqjzqa", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -28,7 +28,6 @@ function ContactCard() {
           name: formData.get("name"),
           email: formData.get("email"),
           message: formData.get("message"),
-          _template: "table",
         }),
       });
       e.currentTarget.reset();
