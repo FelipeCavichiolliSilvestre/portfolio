@@ -17,6 +17,7 @@ export const typographyVariants = cva("", {
       p1: "text-p1 font-body",
       p2: "text-p2 font-body",
       p3: "text-p3 font-body",
+      marquee: "text-h4 font-marquee font-regular",
     },
     weight: {
       thin: "",
@@ -44,7 +45,7 @@ export const typographyVariants = cva("", {
     {
       variant: ["p1", "p2", "p3"],
       weight: "regular",
-      class: "font-regular",
+      class: "font-medium",
     },
     {
       variant: ["p1", "p2", "p3"],
@@ -54,7 +55,7 @@ export const typographyVariants = cva("", {
     {
       variant: ["p1", "p2", "p3"],
       weight: "bold",
-      class: "font-semibold",
+      class: "font-bold",
     },
   ],
   defaultVariants: {
