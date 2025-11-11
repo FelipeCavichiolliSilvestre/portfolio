@@ -91,7 +91,7 @@
   --text-p1--line-height: 22px;
   --text-p2: 16px;
   --text-p2--line-height: 20px;
-  --text-p3: 12px;
+  --text-p3: 14px;
   --text-p3--line-height: 16px;
 
   /* https://www.neobrutalism.dev */
@@ -143,7 +143,7 @@
 
 @layer base {
   body {
-    @apply text-foreground font-base bg-white;
+    @apply text-foreground font-body bg-white;
   }
 
   h1,

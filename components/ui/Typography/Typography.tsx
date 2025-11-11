@@ -44,7 +44,7 @@ export const typographyVariants = cva("", {
     {
       variant: ["p1", "p2", "p3"],
       weight: "regular",
-      class: "font-regular",
+      class: "font-medium",
     },
     {
       variant: ["p1", "p2", "p3"],
