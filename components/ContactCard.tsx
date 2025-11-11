@@ -14,7 +14,8 @@ function ContactCard() {
 
   async function onSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
-    const formData = new FormData(e.currentTarget);
+    const currentTarget = e.currentTarget;
+    const formData = new FormData(currentTarget);
 
     try {
       setLoading(true);
@@ -30,7 +31,7 @@ function ContactCard() {
           message: formData.get("message"),
         }),
       });
-      e.currentTarget.reset();
+      currentTarget.reset();
     } catch (error) {
       console.error(error);
     } finally {
