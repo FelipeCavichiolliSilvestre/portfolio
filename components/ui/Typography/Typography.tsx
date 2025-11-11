@@ -54,7 +54,7 @@ export const typographyVariants = cva("", {
     {
       variant: ["p1", "p2", "p3"],
       weight: "bold",
-      class: "font-semibold",
+      class: "font-bold",
     },
   ],
   defaultVariants: {
