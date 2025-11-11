@@ -142,6 +142,10 @@
 }
 
 @layer base {
+  * {
+    text-decoration-thickness: 2px;
+  }
+
   body {
     @apply text-foreground font-body bg-white;
   }
