@@ -11,7 +11,12 @@ export function HeroBanner() {
       <section>
         <Typography variant="h4" weight="regular">
           Olá! Eu sou <br />
-          <Typography asChild variant="d2" weight="bold" className="text-main">
+          <Typography
+            asChild
+            variant="d2"
+            weight="extrabold"
+            className="text-main"
+          >
             <span>Felipe Silvestre,</span>
           </Typography>
           <br />
