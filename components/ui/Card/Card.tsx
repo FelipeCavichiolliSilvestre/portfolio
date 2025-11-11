@@ -1,6 +1,7 @@
 import * as React from "react";
 
 import { cn } from "@/lib/utils";
+import { typographyVariants } from "../Typography";
 
 function Card({ className, ...props }: React.ComponentProps<"div">) {
   return (
@@ -32,7 +33,11 @@ function CardTitle({ className, ...props }: React.ComponentProps<"div">) {
   return (
     <div
       data-slot="card-title"
-      className={cn("font-heading leading-none", className)}
+      className={cn(
+        typographyVariants({ variant: "h6", weight: "bold" }),
+        "leading-none",
+        className
+      )}
       {...props}
     />
   );
@@ -42,7 +47,10 @@ function CardDescription({ className, ...props }: React.ComponentProps<"div">) {
   return (
     <div
       data-slot="card-description"
-      className={cn("text-sm font-base", className)}
+      className={cn(
+        typographyVariants({ variant: "p2", weight: "regular" }),
+        className
+      )}
       {...props}
     />
   );
