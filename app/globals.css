@@ -3,6 +3,7 @@
 
 @import "@fontsource-variable/archivo";
 @import "@fontsource-variable/dm-sans";
+@import "@fontsource/ubuntu/400.css";
 
 :root {
   --background: oklch(95.31% 0.0496 169.04);
@@ -70,6 +71,7 @@
   --font-display: "Archivo Variable", sans-serif;
   --font-header: "Archivo Variable", sans-serif;
   --font-body: "DM Sans Variable", sans-serif;
+  --font-marquee: "Ubuntu", sans-serif;
 
   --text-d1: 68px;
   --text-d1--line-height: 72px;

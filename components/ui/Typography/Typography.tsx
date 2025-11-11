@@ -17,6 +17,7 @@ export const typographyVariants = cva("", {
       p1: "text-p1 font-body",
       p2: "text-p2 font-body",
       p3: "text-p3 font-body",
+      marquee: "text-h4 font-marquee font-regular",
     },
     weight: {
       thin: "",
