@@ -44,7 +44,7 @@ function Navbar() {
 
         <Popover>
           <PopoverTrigger asChild>
-            <Button size="icon" className="md:hidden">
+            <Button size="icon" className="md:hidden" aria-label="Abrir Menu">
               <HamburgerIcon />
             </Button>
           </PopoverTrigger>
