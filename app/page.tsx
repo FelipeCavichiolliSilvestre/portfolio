@@ -73,7 +73,7 @@ export default function Home() {
                 <GithubIcon />
               </a>
             </Button>
-            <Button size="icon">
+            <Button size="icon" asChild>
               <a
                 href="https://www.linkedin.com/in/felipe-silvestre-004aa2216"
                 target="_blank"

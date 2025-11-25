@@ -40,12 +40,16 @@ function ProjectCard(props: ProjectCardProps) {
         <CardDescription>{description}</CardDescription>
       </CardContent>
       <CardFooter className="inline-flex gap-4 justify-end items-end grow">
-        <Button size="icon" asChild>
+        <Button
+          size="icon"
+          asChild
+          aria-label={`Abrir repositório do projeto ${title} no GitHub`}
+        >
           <a href={githubLink} target="_blank">
             <GithubIcon />
           </a>
         </Button>
-        <Button asChild>
+        <Button asChild aria-label={`Visitar ${title}`}>
           <a
             href={projectLink}
             target={projectLink.startsWith("#") ? "_self" : "_blank"}
