@@ -55,7 +55,12 @@ function ContactCard() {
           </div>
           <div>
             <Label htmlFor="message">Mensagem</Label>
-            <Textarea name="message" className="min-h-50" required />
+            <Textarea
+              id="message"
+              name="message"
+              className="min-h-50"
+              required
+            />
           </div>
           <div className="flex flex-col-reverse gap-4 sm:flex-row sm:justify-between sm:items-center">
             <Typography>
