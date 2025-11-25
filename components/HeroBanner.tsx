@@ -40,6 +40,8 @@ export function HeroBanner() {
             alt="Uma ilustração de uma pessoa com cabelos longos e moletom verde dentro de uma estrela estilziada"
             unoptimized
             className="w-75 lg:w-90"
+            loading="eager"
+            fetchPriority="high"
           />
         </div>
       </section>
