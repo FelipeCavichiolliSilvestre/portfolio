@@ -26,53 +26,59 @@ function Navbar() {
           </h1>
         </Typography>
 
-        <div className="hidden md:inline-flex justify-between items-center gap-8">
-          <Button asChild>
-            <a href="#projetos">
-              <CodeIcon />
-              Projetos
-            </a>
-          </Button>
-
-          <Button asChild>
-            <a href="#contato">
-              <AtSignIcon />
-              Contato
-            </a>
-          </Button>
-        </div>
-
-        <Popover>
-          <PopoverTrigger asChild>
-            <Button size="icon" className="md:hidden" aria-label="Abrir Menu">
-              <HamburgerIcon />
-            </Button>
-          </PopoverTrigger>
-
-          <PopoverContent
-            side="bottom"
-            align="end"
-            className="text-main-foreground p-1"
-          >
-            <MenuList>
-              <MenuListItem asChild>
+        <nav>
+          <ul className="hidden md:inline-flex justify-between items-center gap-8">
+            <li>
+              <Button asChild>
                 <a href="#projetos">
                   <CodeIcon />
                   Projetos
                 </a>
-              </MenuListItem>
+              </Button>
+            </li>
 
-              <MenuListSeparator />
-
-              <MenuListItem asChild>
+            <li>
+              <Button asChild>
                 <a href="#contato">
                   <AtSignIcon />
                   Contato
                 </a>
-              </MenuListItem>
-            </MenuList>
-          </PopoverContent>
-        </Popover>
+              </Button>
+            </li>
+          </ul>
+
+          <Popover>
+            <PopoverTrigger asChild>
+              <Button size="icon" className="md:hidden" aria-label="Abrir Menu">
+                <HamburgerIcon />
+              </Button>
+            </PopoverTrigger>
+
+            <PopoverContent
+              side="bottom"
+              align="end"
+              className="text-main-foreground p-1"
+            >
+              <MenuList>
+                <MenuListItem asChild>
+                  <a href="#projetos">
+                    <CodeIcon />
+                    Projetos
+                  </a>
+                </MenuListItem>
+
+                <MenuListSeparator />
+
+                <MenuListItem asChild>
+                  <a href="#contato">
+                    <AtSignIcon />
+                    Contato
+                  </a>
+                </MenuListItem>
+              </MenuList>
+            </PopoverContent>
+          </Popover>
+        </nav>
       </header>
     </Container>
   );
