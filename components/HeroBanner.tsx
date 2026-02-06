@@ -1,5 +1,6 @@
 import { Container } from "@/components/ui/Container";
 import { Typography } from "@/components/ui/Typography";
+import { QuirkyProgrammerSoCrazyOMG } from "@/components/QuirkyDictionary";
 import Image from "next/image";
 
 export function HeroBanner() {
@@ -20,16 +21,8 @@ export function HeroBanner() {
             <span>Felipe Silvestre,</span>
           </Typography>
           <br />
-          um{" "}
-          <Typography
-            asChild
-            variant="h4"
-            weight="bold"
-            className="underline text-main"
-          >
-            <span>pro·gra·ma·dor</span>
-          </Typography>{" "}
-          que ama o que faz e faz bem o que ama.
+          um <QuirkyProgrammerSoCrazyOMG /> que ama o que faz e faz bem o que
+          ama.
         </Typography>
 
         <div className="flex-none lg:flex lg:flex-1 lg:justify-center">
