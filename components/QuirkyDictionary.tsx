@@ -53,7 +53,6 @@ function QuirkyProgrammerSoCrazyOMG() {
           </Typography>
 
           <Button
-            variant="noShadow"
             size="icon"
             onClick={() => setDefinitions(getRandomDefinitions())}
           >
