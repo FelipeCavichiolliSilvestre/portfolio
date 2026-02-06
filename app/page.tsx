@@ -1,4 +1,9 @@
-import { GithubIcon, LinkedinIcon } from "lucide-react";
+import {
+  GithubIcon,
+  LinkedinIcon,
+  BriefcaseBusinessIcon,
+  GraduationCapIcon,
+} from "lucide-react";
 import { Navbar } from "@/components/Navbar";
 import { HeroBanner } from "@/components/HeroBanner";
 import { Marquee } from "@/components/ui/Marquee";
@@ -6,6 +11,20 @@ import { Container } from "@/components/ui/Container";
 import { ProjectCard } from "@/components/ProjectCard";
 import { ContactCard } from "@/components/ContactCard";
 import { Button } from "@/components/ui/Button";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/Card";
+import { Typography } from "@/components/ui/Typography";
+import {
+  Timeline,
+  TimelineBullet,
+  TimelineContent,
+  TimelineItem,
+} from "@/components/ui/Timeline";
 
 export default function Home() {
   return (
@@ -56,11 +75,152 @@ export default function Home() {
           </section>
         </Container>
 
+        <span id="experiencia" />
+        <Marquee items={Array(14).fill("Experiência")} />
+        <Container
+          className="violet-theme bg-background py-12 flex flex-row"
+          asChild
+        >
+          <section>
+            <Timeline>
+              <TimelineItem>
+                <TimelineBullet>
+                  <BriefcaseBusinessIcon />
+                </TimelineBullet>
+
+                <TimelineContent>
+                  <Card className="max-w-xl bg-white">
+                    <CardHeader className="flex flex-col sm:flex-row justify-between items-start">
+                      <div className="flex-1">
+                        <CardTitle>Mervil Transportes</CardTitle>
+                        <CardDescription className="text-light-foreground">
+                          Programador de Software - Freelance
+                        </CardDescription>
+                      </div>
+                      <Typography
+                        variant="p3"
+                        className="text-light-foreground"
+                      >
+                        09/23 - 11/25
+                      </Typography>
+                    </CardHeader>
+                    <CardContent>
+                      Após minha saída da Mervil como estagiário, ainda mantive
+                      relações profissionais com a empresa fornecendo serviços
+                      de forma esporádica. <br />
+                      De maneira geral eram tarefas mais simples como correções
+                      de <i>bugs</i>, pequenas melhorias, suporte técnico, etc.
+                    </CardContent>
+                  </Card>
+                </TimelineContent>
+              </TimelineItem>
+
+              <TimelineItem>
+                <TimelineBullet>
+                  <GraduationCapIcon />
+                </TimelineBullet>
+
+                <TimelineContent>
+                  <Card className="max-w-xl bg-white">
+                    <CardHeader className="flex flex-col sm:flex-row justify-between items-start">
+                      <div className="flex-1">
+                        <CardTitle>FATEC</CardTitle>
+                        <CardDescription className="text-light-foreground">
+                          Análise e Desenvolvimento de Sistemas
+                        </CardDescription>
+                      </div>
+                      <Typography
+                        variant="p3"
+                        className="text-light-foreground"
+                      >
+                        02/23 - 12/25
+                      </Typography>
+                    </CardHeader>
+                    <CardContent>
+                      Cursei Análise e Desenvolvimento de Sistemas na FATEC,
+                      onde tive contato com projetos mais complexos, trabalhando
+                      ideias do início ao fim e aprendendo como estruturar
+                      soluções.
+                    </CardContent>
+                  </Card>
+                </TimelineContent>
+              </TimelineItem>
+
+              <TimelineItem>
+                <TimelineBullet>
+                  <BriefcaseBusinessIcon />
+                </TimelineBullet>
+
+                <TimelineContent>
+                  <Card className="max-w-xl bg-white">
+                    <CardHeader className="flex flex-col sm:flex-row justify-between items-start">
+                      <div className="flex-1">
+                        <CardTitle>Mervil Transportes</CardTitle>
+                        <CardDescription className="text-light-foreground">
+                          Programador de Software - Estágio
+                        </CardDescription>
+                      </div>
+                      <Typography
+                        variant="p3"
+                        className="text-light-foreground"
+                      >
+                        06/22 - 08/23
+                      </Typography>
+                    </CardHeader>
+                    <CardContent>
+                      Meu primeiro trabalho, desafiador mas gratificante. Éramos
+                      uma equipe de duas pessoas resolvendo problemas reais de
+                      uma empresa que reconhece a importância da tecnologia.
+                      <br />
+                      Tinhamos bastante liberdade técnica e responsabilidades,
+                      então durante meu tempo na Mervil aprendi muito sobre
+                      arquitetura de software, redes, manutenção de servidor e
+                      levantamento de requisitos.
+                    </CardContent>
+                  </Card>
+                </TimelineContent>
+              </TimelineItem>
+
+              <TimelineItem>
+                <TimelineBullet>
+                  <GraduationCapIcon />
+                </TimelineBullet>
+
+                <TimelineContent>
+                  <Card className="max-w-xl bg-white">
+                    <CardHeader className="flex flex-col sm:flex-row justify-between items-start">
+                      <div className="flex-1">
+                        <CardTitle>ETEC</CardTitle>
+                        <CardDescription className="text-light-foreground">
+                          Análise e Desenvolvimento de Sistemas
+                        </CardDescription>
+                      </div>
+                      <Typography
+                        variant="p3"
+                        className="text-light-foreground"
+                      >
+                        02/20 - 12/22
+                      </Typography>
+                    </CardHeader>
+                    <CardContent>
+                      Cursei o ensino técnico em Análise e Desenvolvimento de
+                      Sistemas na ETEC, onde dei meus primeiros passos em
+                      desenvolvimento de software, aprendi a estudar sozinho e
+                      descobri de meu interesse pela área de tecnologia. (O
+                      plano inicial era ser legista criminal).
+                    </CardContent>
+                  </Card>
+                </TimelineContent>
+              </TimelineItem>
+            </Timeline>
+          </section>
+        </Container>
+
         <span id="contato" />
         <Marquee items={Array(14).fill("Contato")} />
 
         <Container
-          className="violet-theme bg-background flex flex-col justify-center items-center py-12 gap-6"
+          className="pink-theme bg-background flex flex-col justify-center items-center py-12 gap-6"
           asChild
         >
           <section>
