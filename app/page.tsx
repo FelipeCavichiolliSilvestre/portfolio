@@ -56,11 +56,17 @@ export default function Home() {
           </section>
         </Container>
 
+        <span id="experiencia" />
+        <Marquee items={Array(14).fill("Experiência")} />
+        <Container className="violet-theme bg-background py-12" asChild>
+          <section></section>
+        </Container>
+
         <span id="contato" />
         <Marquee items={Array(14).fill("Contato")} />
 
         <Container
-          className="violet-theme bg-background flex flex-col justify-center items-center py-12 gap-6"
+          className="pink-theme bg-background flex flex-col justify-center items-center py-12 gap-6"
           asChild
         >
           <section>
