@@ -105,10 +105,11 @@ export default function Home() {
                       </Typography>
                     </CardHeader>
                     <CardContent>
-                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                      Minus modi obcaecati, dicta eum corporis sunt? Inventore
-                      ea mollitia iusto, reprehenderit, suscipit consequatur
-                      dolorem quaerat quo modi dolore, explicabo est vel?
+                      Após minha saída da Mervil como estagiário, ainda mantive
+                      relações profissionais com a empresa fornecendo serviços
+                      de forma esporádica. <br />
+                      De maneira geral eram tarefas mais simples como correções
+                      de <i>bugs</i>, pequenas melhorias, suporte técnico, etc.
                     </CardContent>
                   </Card>
                 </TimelineContent>
@@ -136,10 +137,10 @@ export default function Home() {
                       </Typography>
                     </CardHeader>
                     <CardContent>
-                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                      Minus modi obcaecati, dicta eum corporis sunt? Inventore
-                      ea mollitia iusto, reprehenderit, suscipit consequatur
-                      dolorem quaerat quo modi dolore, explicabo est vel?
+                      Cursei Análise e Desenvolvimento de Sistemas na FATEC,
+                      onde tive contato com projetos mais complexos, trabalhando
+                      ideias do início ao fim e aprendendo como estruturar
+                      soluções.
                     </CardContent>
                   </Card>
                 </TimelineContent>
@@ -167,10 +168,14 @@ export default function Home() {
                       </Typography>
                     </CardHeader>
                     <CardContent>
-                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                      Minus modi obcaecati, dicta eum corporis sunt? Inventore
-                      ea mollitia iusto, reprehenderit, suscipit consequatur
-                      dolorem quaerat quo modi dolore, explicabo est vel?
+                      Meu primeiro trabalho, desafiador mas gratificante. Éramos
+                      uma equipe de duas pessoas resolvendo problemas reais de
+                      uma empresa que reconhece a importância da tecnologia.
+                      <br />
+                      Tinhamos bastante liberdade técnica e responsabilidades,
+                      então durante meu tempo na Mervil aprendi muito sobre
+                      arquitetura de software, redes, manutenção de servidor e
+                      levantamento de requisitos.
                     </CardContent>
                   </Card>
                 </TimelineContent>
@@ -198,10 +203,11 @@ export default function Home() {
                       </Typography>
                     </CardHeader>
                     <CardContent>
-                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                      Minus modi obcaecati, dicta eum corporis sunt? Inventore
-                      ea mollitia iusto, reprehenderit, suscipit consequatur
-                      dolorem quaerat quo modi dolore, explicabo est vel?
+                      Cursei o ensino técnico em Análise e Desenvolvimento de
+                      Sistemas na ETEC, onde dei meus primeiros passos em
+                      desenvolvimento de software, aprendi a estudar sozinho e
+                      descobri de meu interesse pela área de tecnologia. (O
+                      plano inicial era ser legista criminal).
                     </CardContent>
                   </Card>
                 </TimelineContent>
