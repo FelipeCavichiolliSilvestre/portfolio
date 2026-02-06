@@ -1,4 +1,4 @@
-import { AtSignIcon, CodeIcon, HamburgerIcon } from "lucide-react";
+import { AtSignIcon, AwardIcon, CodeIcon, HamburgerIcon } from "lucide-react";
 import { Typography } from "@/components/ui/Typography";
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
@@ -39,6 +39,15 @@ function Navbar() {
 
             <li>
               <Button asChild>
+                <a href="#experiencia">
+                  <AwardIcon />
+                  Experiência
+                </a>
+              </Button>
+            </li>
+
+            <li>
+              <Button asChild>
                 <a href="#contato">
                   <AtSignIcon />
                   Contato
@@ -64,6 +73,15 @@ function Navbar() {
                   <a href="#projetos">
                     <CodeIcon />
                     Projetos
+                  </a>
+                </MenuListItem>
+
+                <MenuListSeparator />
+
+                <MenuListItem asChild>
+                  <a href="#experiencia">
+                    <AwardIcon />
+                    Experiência
                   </a>
                 </MenuListItem>
 
