@@ -1,4 +1,9 @@
-import { GithubIcon, LinkedinIcon } from "lucide-react";
+import {
+  GithubIcon,
+  LinkedinIcon,
+  BriefcaseBusinessIcon,
+  GraduationCapIcon,
+} from "lucide-react";
 import { Navbar } from "@/components/Navbar";
 import { HeroBanner } from "@/components/HeroBanner";
 import { Marquee } from "@/components/ui/Marquee";
@@ -6,6 +11,20 @@ import { Container } from "@/components/ui/Container";
 import { ProjectCard } from "@/components/ProjectCard";
 import { ContactCard } from "@/components/ContactCard";
 import { Button } from "@/components/ui/Button";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/Card";
+import { Typography } from "@/components/ui/Typography";
+import {
+  Timeline,
+  TimelineBullet,
+  TimelineContent,
+  TimelineItem,
+} from "@/components/ui/Timeline";
 
 export default function Home() {
   return (
@@ -58,8 +77,137 @@ export default function Home() {
 
         <span id="experiencia" />
         <Marquee items={Array(14).fill("Experiência")} />
-        <Container className="violet-theme bg-background py-12" asChild>
-          <section></section>
+        <Container
+          className="violet-theme bg-background py-12 flex flex-row"
+          asChild
+        >
+          <section>
+            <Timeline>
+              <TimelineItem>
+                <TimelineBullet>
+                  <BriefcaseBusinessIcon />
+                </TimelineBullet>
+
+                <TimelineContent>
+                  <Card className="max-w-xl bg-white">
+                    <CardHeader className="flex flex-col sm:flex-row justify-between items-start">
+                      <div className="flex-1">
+                        <CardTitle>Mervil Transportes</CardTitle>
+                        <CardDescription className="text-light-foreground">
+                          Programador de Software - Freelance
+                        </CardDescription>
+                      </div>
+                      <Typography
+                        variant="p3"
+                        className="text-light-foreground"
+                      >
+                        09/23 - 11/25
+                      </Typography>
+                    </CardHeader>
+                    <CardContent>
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Minus modi obcaecati, dicta eum corporis sunt? Inventore
+                      ea mollitia iusto, reprehenderit, suscipit consequatur
+                      dolorem quaerat quo modi dolore, explicabo est vel?
+                    </CardContent>
+                  </Card>
+                </TimelineContent>
+              </TimelineItem>
+
+              <TimelineItem>
+                <TimelineBullet>
+                  <GraduationCapIcon />
+                </TimelineBullet>
+
+                <TimelineContent>
+                  <Card className="max-w-xl bg-white">
+                    <CardHeader className="flex flex-col sm:flex-row justify-between items-start">
+                      <div className="flex-1">
+                        <CardTitle>FATEC</CardTitle>
+                        <CardDescription className="text-light-foreground">
+                          Análise e Desenvolvimento de Sistemas
+                        </CardDescription>
+                      </div>
+                      <Typography
+                        variant="p3"
+                        className="text-light-foreground"
+                      >
+                        02/23 - 12/25
+                      </Typography>
+                    </CardHeader>
+                    <CardContent>
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Minus modi obcaecati, dicta eum corporis sunt? Inventore
+                      ea mollitia iusto, reprehenderit, suscipit consequatur
+                      dolorem quaerat quo modi dolore, explicabo est vel?
+                    </CardContent>
+                  </Card>
+                </TimelineContent>
+              </TimelineItem>
+
+              <TimelineItem>
+                <TimelineBullet>
+                  <BriefcaseBusinessIcon />
+                </TimelineBullet>
+
+                <TimelineContent>
+                  <Card className="max-w-xl bg-white">
+                    <CardHeader className="flex flex-col sm:flex-row justify-between items-start">
+                      <div className="flex-1">
+                        <CardTitle>Mervil Transportes</CardTitle>
+                        <CardDescription className="text-light-foreground">
+                          Programador de Software - Estágio
+                        </CardDescription>
+                      </div>
+                      <Typography
+                        variant="p3"
+                        className="text-light-foreground"
+                      >
+                        06/22 - 08/23
+                      </Typography>
+                    </CardHeader>
+                    <CardContent>
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Minus modi obcaecati, dicta eum corporis sunt? Inventore
+                      ea mollitia iusto, reprehenderit, suscipit consequatur
+                      dolorem quaerat quo modi dolore, explicabo est vel?
+                    </CardContent>
+                  </Card>
+                </TimelineContent>
+              </TimelineItem>
+
+              <TimelineItem>
+                <TimelineBullet>
+                  <GraduationCapIcon />
+                </TimelineBullet>
+
+                <TimelineContent>
+                  <Card className="max-w-xl bg-white">
+                    <CardHeader className="flex flex-col sm:flex-row justify-between items-start">
+                      <div className="flex-1">
+                        <CardTitle>ETEC</CardTitle>
+                        <CardDescription className="text-light-foreground">
+                          Análise e Desenvolvimento de Sistemas
+                        </CardDescription>
+                      </div>
+                      <Typography
+                        variant="p3"
+                        className="text-light-foreground"
+                      >
+                        02/20 - 12/22
+                      </Typography>
+                    </CardHeader>
+                    <CardContent>
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Minus modi obcaecati, dicta eum corporis sunt? Inventore
+                      ea mollitia iusto, reprehenderit, suscipit consequatur
+                      dolorem quaerat quo modi dolore, explicabo est vel?
+                    </CardContent>
+                  </Card>
+                </TimelineContent>
+              </TimelineItem>
+            </Timeline>
+          </section>
         </Container>
 
         <span id="contato" />
