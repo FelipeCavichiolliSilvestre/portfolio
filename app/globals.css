@@ -25,14 +25,14 @@
 }
 
 .cyan-theme {
-  --background: oklch(94.61% 0.043 211.12);
-  --secondary-background: oklch(100% 0 0);
-  --foreground: oklch(0% 0 0);
-  --main-foreground: oklch(0% 0 0);
-  --main: oklch(76.89% 0.139164 219.13);
-  --border: oklch(0% 0 0);
-  --ring: oklch(0% 0 0);
-  --overlay: oklch(0% 0 0 / 0.8);
+  --background: #cdf6fe;
+  --secondary-background: #ffffff;
+  --foreground: #000000;
+  --main-foreground: #000000;
+  --main: #00c8f0;
+  --border: #000000;
+  --ring: #000000;
+  --overlay: #000000cc;
   --shadow: 2px 2px 0px 0px var(--border);
   --chart-1: #00c8f0;
   --chart-2: #ff7a05;
@@ -43,14 +43,14 @@
 }
 
 .violet-theme {
-  --background: oklch(93.88% 0.033 300.19);
-  --secondary-background: oklch(100% 0 0);
-  --foreground: oklch(0% 0 0);
-  --main-foreground: oklch(0% 0 0);
-  --main: oklch(70.28% 0.1753 295.36);
-  --border: oklch(0% 0 0);
-  --ring: oklch(0% 0 0);
-  --overlay: oklch(0% 0 0 / 0.8);
+  --background: #eee6fe;
+  --secondary-background: #ffffff;
+  --foreground: #000000;
+  --main-foreground: #000000;
+  --main: #a985ff;
+  --border: #000000;
+  --ring: #000000;
+  --overlay: #000000cc;
   --shadow: 2px 2px 0px 0px var(--border);
   --chart-1: #a985ff;
   --chart-2: #00d696;
@@ -61,14 +61,14 @@
 }
 
 .pink-theme {
-  --background: oklch(95.16% 0.0242 343.23);
-  --secondary-background: oklch(100% 0 0);
-  --foreground: oklch(0% 0 0);
-  --main-foreground: oklch(0% 0 0);
-  --main: oklch(71.5% 0.197 354.23);
-  --border: oklch(0% 0 0);
-  --ring: oklch(0% 0 0);
-  --overlay: oklch(0% 0 0 / 0.8);
+  --background: #fce9f3;
+  --secondary-background: #ffffff;
+  --foreground: #000000;
+  --main-foreground: #000000;
+  --main: #fc64ab;
+  --border: #000000;
+  --ring: #000000;
+  --overlay: #000000cc;
   --shadow: 2px 2px 0px 0px var(--border);
   --chart-1: #fc64ab;
   --chart-2: #facc00;
