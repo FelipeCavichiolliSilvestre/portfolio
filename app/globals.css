@@ -6,21 +6,21 @@
 @import "@fontsource/ubuntu/400.css";
 
 :root {
-  --background: oklch(95.31% 0.0496 169.04);
-  --secondary-background: oklch(100% 0 0);
-  --foreground: oklch(0% 0 0);
-  --light-foreground: rgba(39, 39, 39, 0.8);
-  --main-foreground: oklch(0% 0 0);
-  --main: oklch(77.54% 0.1681 162.78);
-  --border: oklch(0% 0 0);
-  --ring: oklch(0% 0 0);
-  --overlay: oklch(0% 0 0 / 0.8);
+  --background: #d0fbea;
+  --secondary-background: #ffffff;
+  --foreground: #000000;
+  --light-foreground: #272727cc;
+  --main-foreground: #000000;
+  --main: #01d696;
+  --border: #000000;
+  --ring: #000000;
+  --overlay: #000000cc;
   --shadow: 2px 2px 0px 0px var(--border);
-  --chart-1: #00d696;
-  --chart-2: #7a83ff;
-  --chart-3: #facc00;
-  --chart-4: #ff4d50;
-  --chart-5: #0099ff;
+  --chart-1: #01d696;
+  --chart-2: #00c8f0;
+  --chart-3: #a985ff;
+  --chart-4: #fc64ab;
+  --chart-5: #facc00;
   --chart-active-dot: #000;
 }
 
@@ -34,10 +34,10 @@
   --ring: #000000;
   --overlay: #000000cc;
   --shadow: 2px 2px 0px 0px var(--border);
-  --chart-1: #00c8f0;
-  --chart-2: #ff7a05;
-  --chart-3: #7a83ff;
-  --chart-4: #ff4d50;
+  --chart-1: #01d696;
+  --chart-2: #00c8f0;
+  --chart-3: #a985ff;
+  --chart-4: #fc64ab;
   --chart-5: #facc00;
   --chart-active-dot: #000;
 }
@@ -52,11 +52,11 @@
   --ring: #000000;
   --overlay: #000000cc;
   --shadow: 2px 2px 0px 0px var(--border);
-  --chart-1: #a985ff;
-  --chart-2: #00d696;
-  --chart-3: #facc00;
-  --chart-4: #ff4d50;
-  --chart-5: #0099ff;
+  --chart-1: #01d696;
+  --chart-2: #00c8f0;
+  --chart-3: #a985ff;
+  --chart-4: #fc64ab;
+  --chart-5: #facc00;
   --chart-active-dot: #000;
 }
 
@@ -70,11 +70,11 @@
   --ring: #000000;
   --overlay: #000000cc;
   --shadow: 2px 2px 0px 0px var(--border);
-  --chart-1: #fc64ab;
-  --chart-2: #facc00;
-  --chart-3: #ff7a05;
-  --chart-4: #ff4d50;
-  --chart-5: #7a83ff;
+  --chart-1: #01d696;
+  --chart-2: #00c8f0;
+  --chart-3: #a985ff;
+  --chart-4: #fc64ab;
+  --chart-5: #facc00;
   --chart-active-dot: #000;
 }
 
