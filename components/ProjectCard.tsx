@@ -9,9 +9,12 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/Card";
+import { Badge, badgeVariants } from "@/components/ui/Badge";
+import { VariantProps } from "class-variance-authority";
 
 type ProjectCardProps = {
   title: string;
+  tags?: Tag[];
   description: string;
   bannerSrc: string;
   bannerAlt: string;
@@ -19,9 +22,21 @@ type ProjectCardProps = {
   projectLink: string;
 };
 
+type Tag = {
+  label: string;
+  color: Exclude<VariantProps<typeof badgeVariants>["color"], null>;
+};
+
 function ProjectCard(props: ProjectCardProps) {
-  const { bannerAlt, bannerSrc, title, description, githubLink, projectLink } =
-    props;
+  const {
+    bannerAlt,
+    bannerSrc,
+    title,
+    tags,
+    description,
+    githubLink,
+    projectLink,
+  } = props;
 
   return (
     <Card className="bg-white w-full h-full">
@@ -34,7 +49,15 @@ function ProjectCard(props: ProjectCardProps) {
         className="w-full -mt-6 aspect-2"
       />
       <CardHeader>
-        <CardTitle>{title}</CardTitle>
+        <CardTitle className="pb-0.5">{title}</CardTitle>
+
+        <div className="flex gap-2">
+          {tags?.map(({ label, color }) => (
+            <Badge key={label} color={color}>
+              {label}
+            </Badge>
+          ))}
+        </div>
       </CardHeader>
       <CardContent>
         <CardDescription>{description}</CardDescription>

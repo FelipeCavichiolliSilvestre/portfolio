@@ -45,6 +45,11 @@ export default function Home() {
             <div className="w-full sm:w-[calc(50%-(var(--spacing)*8/2))] md:w-[calc(33.33%-(var(--spacing)*8*2/3))] lg:w-[calc(33.33%-(var(--spacing)*16*2/3))]">
               <ProjectCard
                 title="Yet Another Todo"
+                tags={[
+                  { label: "React", color: "blue" },
+                  { label: "NestJS", color: "pink" },
+                  { label: "SocketIO", color: "yellow" },
+                ]}
                 description="Um projeto de uma lista de afazeres com colaboração em tempo real utilizando Websockets e API REST. Feito com React + NestJS + SocketIO."
                 bannerSrc="/yat-banner.png"
                 bannerAlt="Uma captura de tela referente ao projeto 'Yet Another Todo'"
@@ -55,6 +60,11 @@ export default function Home() {
             <div className="w-full sm:w-[calc(50%-(var(--spacing)*8/2))] md:w-[calc(33.33%-(var(--spacing)*8*2/3))] lg:w-[calc(33.33%-(var(--spacing)*16*2/3))]">
               <ProjectCard
                 title="Game of Life"
+                tags={[
+                  { label: "HTML", color: "green" },
+                  { label: "Javascript", color: "yellow" },
+                  { label: "CSS", color: "blue" },
+                ]}
                 description="Um dos meus primeiros projetos. Simula o jogo da vida de John Conway, ao mesmo tempo que permite a alteração nas regras básicas de reprodução e sobrevivência."
                 bannerSrc="/game-of-life-banner.png"
                 bannerAlt="Uma captura de tela referente ao projeto 'Game of Life'"
@@ -65,6 +75,11 @@ export default function Home() {
             <div className="w-full sm:w-[calc(50%-(var(--spacing)*8/2))] md:w-[calc(33.33%-(var(--spacing)*8*2/3))] lg:w-[calc(33.33%-(var(--spacing)*16*2/3))]">
               <ProjectCard
                 title="Portfólio"
+                tags={[
+                  { label: "NextJS", color: "blue" },
+                  { label: "Storybook", color: "pink" },
+                  { label: "TailwindCSS", color: "green" },
+                ]}
                 description="Você está aqui! Esta página em estilo neo-brutalismo teve seu design criado utilizando Figma e foi codificado utlizando NextJS + Shadcn + Tailwind CSS."
                 bannerSrc="/portfolio-banner.png"
                 bannerAlt="Uma captura de tela referente ao projeto 'Portfolio'"
