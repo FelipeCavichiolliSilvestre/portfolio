@@ -8,6 +8,7 @@ import { Textarea } from "@/components/ui/Textarea";
 import { Typography } from "@/components/ui/Typography";
 import { Button } from "@/components/ui/Button";
 import { useState } from "react";
+import { toast } from "sonner";
 
 function ContactCard() {
   const [loading, setLoading] = useState(false);
@@ -16,6 +17,14 @@ function ContactCard() {
     e.preventDefault();
     const currentTarget = e.currentTarget;
     const formData = new FormData(currentTarget);
+
+    if (!navigator.onLine) {
+      toast.error("Sem conexão com a internet!", {
+        description:
+          "Verifique sua conexão e tente novamente em alguns segundos",
+      });
+      return;
+    }
 
     try {
       setLoading(true);
@@ -31,9 +40,15 @@ function ContactCard() {
           message: formData.get("message"),
         }),
       });
+      toast.success("Mensagem enviada!", {
+        description: "Sua mensagem foi recebida! Muito obrigado!",
+      });
       currentTarget.reset();
     } catch (error) {
-      console.error(error);
+      toast.error("Algo de errado não está certo!", {
+        description:
+          "Algum erro ocorreu no envio do formulário. Tente novamente mais tarde.",
+      });
     } finally {
       setLoading(false);
     }
