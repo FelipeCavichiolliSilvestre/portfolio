@@ -16,10 +16,12 @@ type ProjectCardProps = {
   title: string;
   tags?: Tag[];
   description: string;
-  bannerSrc: string;
-  bannerAlt: string;
-  githubLink?: string;
-  projectLink?: string;
+  banner: {
+    src: string;
+    alt: string;
+  };
+  sourceCodeLink?: string;
+  demoLink?: string;
 };
 
 type Tag = {
@@ -29,20 +31,19 @@ type Tag = {
 
 function ProjectCard(props: ProjectCardProps) {
   const {
-    bannerAlt,
-    bannerSrc,
+    banner,
     title,
     tags,
     description,
-    githubLink,
-    projectLink,
+    sourceCodeLink: githubLink,
+    demoLink: projectLink,
   } = props;
 
   return (
     <Card className="bg-white w-full h-full">
       <Image
-        src={bannerSrc}
-        alt={bannerAlt}
+        src={banner.src}
+        alt={banner.alt}
         width={1600}
         height={800}
         unoptimized
