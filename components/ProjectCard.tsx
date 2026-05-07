@@ -18,8 +18,8 @@ type ProjectCardProps = {
   description: string;
   bannerSrc: string;
   bannerAlt: string;
-  githubLink: string;
-  projectLink: string;
+  githubLink?: string;
+  projectLink?: string;
 };
 
 type Tag = {
@@ -63,24 +63,28 @@ function ProjectCard(props: ProjectCardProps) {
         <CardDescription>{description}</CardDescription>
       </CardContent>
       <CardFooter className="inline-flex gap-4 justify-end items-end grow">
-        <Button
-          size="icon"
-          asChild
-          aria-label={`Abrir repositório do projeto ${title} no GitHub`}
-        >
-          <a href={githubLink} target="_blank">
-            <GithubIcon />
-          </a>
-        </Button>
-        <Button asChild aria-label={`Visitar ${title}`}>
-          <a
-            href={projectLink}
-            target={projectLink.startsWith("#") ? "_self" : "_blank"}
+        {githubLink !== undefined && (
+          <Button
+            size="icon"
+            asChild
+            aria-label={`Abrir repositório do projeto ${title} no GitHub`}
           >
-            Visitar{projectLink === "#top" ? "?" : ""}
-            <SquareArrowOutUpRight />
-          </a>
-        </Button>
+            <a href={githubLink} target="_blank">
+              <GithubIcon />
+            </a>
+          </Button>
+        )}
+        {projectLink !== undefined && (
+          <Button asChild aria-label={`Visitar ${title}`}>
+            <a
+              href={projectLink}
+              target={projectLink.startsWith("#") ? "_self" : "_blank"}
+            >
+              Visitar{projectLink === "#top" ? "?" : ""}
+              <SquareArrowOutUpRight />
+            </a>
+          </Button>
+        )}
       </CardFooter>
     </Card>
   );
