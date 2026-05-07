@@ -11,7 +11,7 @@ const meta = {
   },
   tags: ["autodocs"],
   argTypes: {
-    variant: {
+    color: {
       control: "select",
       options: ["default", "neutral"],
       type: "string",
@@ -48,6 +48,6 @@ export const DefaultWithRightIcon: Story = {
 
 export const Neutral: Story = {
   args: {
-    variant: "neutral",
+    color: "neutral",
   },
 };
