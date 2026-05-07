@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { TooltipProvider } from "@/components/ui/Tooltip";
+import { Toaster } from "@/components/ui/Sonner";
 
 export const metadata: Metadata = {
   title: "Felipe Silvestre | Desenvolvedor Fullstack",
@@ -31,6 +32,7 @@ export default function RootLayout({
     <html lang="pt-BR">
       <body>
         <TooltipProvider>{children}</TooltipProvider>
+        <Toaster />
       </body>
     </html>
   );
