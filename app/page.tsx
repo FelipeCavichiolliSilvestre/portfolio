@@ -48,7 +48,7 @@ export default function Home() {
                 tags={[
                   { label: "React", color: "blue" },
                   { label: "NestJS", color: "pink" },
-                  { label: "SocketIO", color: "yellow" },
+                  { label: "SocketIO", color: "purple" },
                 ]}
                 description="Um projeto de uma lista de afazeres com colaboração em tempo real utilizando Websockets e API REST. Feito com React + NestJS + SocketIO."
                 banner={{
@@ -91,6 +91,21 @@ export default function Home() {
                 }}
                 sourceCodeLink="https://github.com/FelipeCavichiolliSilvestre/portfolio"
                 demoLink="#top"
+              />
+            </div>
+            <div className="w-full sm:w-[calc(50%-(var(--spacing)*8/2))] md:w-[calc(33.33%-(var(--spacing)*8*2/3))] lg:w-[calc(33.33%-(var(--spacing)*16*2/3))]">
+              <ProjectCard
+                title="Hospedagem Pessoal"
+                tags={[
+                  { label: "Raspberry PI", color: "pink" },
+                  { label: "Redes", color: "purple" },
+                  { label: "Docker Swarm", color: "blue" },
+                ]}
+                description="Um projeto de DevSecOps que utiliza um Raspberry PI e Docker Swarm para a hospedagem de websites, arquivos e outras usos pessoais."
+                banner={{
+                  src: "/raspberry-banner.png",
+                  alt: "Ilustração de uma framboesa, a logo do Raspberry PI, ao lado do ícone de uma casa",
+                }}
               />
             </div>
           </section>
