@@ -47,12 +47,12 @@ function ProjectCard(props: ProjectCardProps) {
         width={1600}
         height={800}
         unoptimized
-        className="w-full -mt-6 aspect-2"
+        className="w-full -mt-6 aspect-2 border-b border-black"
       />
       <CardHeader>
         <CardTitle className="pb-0.5">{title}</CardTitle>
 
-        <div className="flex gap-2">
+        <div className="flex flex-wrap gap-2">
           {tags?.map(({ label, color }) => (
             <Badge key={label} color={color}>
               {label}
