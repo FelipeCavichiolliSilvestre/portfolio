@@ -4,7 +4,7 @@ import {
   BriefcaseBusinessIcon,
   GraduationCapIcon,
 } from "lucide-react";
-import { Navbar } from "@/components/Navbar";
+import { HomeNavbar } from "@/components/HomeNavbar";
 import { HeroBanner } from "@/components/HeroBanner";
 import { Marquee } from "@/components/ui/Marquee";
 import { Container } from "@/components/ui/Container";
@@ -29,7 +29,7 @@ import {
 export default function Home() {
   return (
     <>
-      <Navbar />
+      <HomeNavbar />
 
       <main>
         <HeroBanner />
