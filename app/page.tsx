@@ -140,12 +140,17 @@ export default function Home() {
                         09/23 - 11/25
                       </Typography>
                     </CardHeader>
-                    <CardContent>
-                      Após minha saída da Mervil como estagiário, ainda mantive
-                      relações profissionais com a empresa fornecendo serviços
-                      de forma esporádica. <br />
-                      De maneira geral eram tarefas mais simples como correções
-                      de <i>bugs</i>, pequenas melhorias, suporte técnico, etc.
+                    <CardContent className="flex flex-col gap-2">
+                      <Typography>
+                        Após minha saída da Mervil como estagiário, ainda
+                        mantive relações profissionais com a empresa fornecendo
+                        serviços de forma esporádica.
+                      </Typography>
+                      <Typography>
+                        De maneira geral eram tarefas mais simples como
+                        correções de <i>bugs</i>, pequenas melhorias, suporte
+                        técnico, etc.
+                      </Typography>
                     </CardContent>
                   </Card>
                 </TimelineContent>
@@ -172,11 +177,13 @@ export default function Home() {
                         02/23 - 12/25
                       </Typography>
                     </CardHeader>
-                    <CardContent>
-                      Cursei Análise e Desenvolvimento de Sistemas na FATEC,
-                      onde tive contato com projetos mais complexos, trabalhando
-                      ideias do início ao fim e aprendendo como estruturar
-                      soluções.
+                    <CardContent className="flex flex-col gap-2">
+                      <Typography>
+                        Cursei Análise e Desenvolvimento de Sistemas na FATEC,
+                        onde tive contato com projetos mais complexos,
+                        trabalhando ideias do início ao fim e aprendendo como
+                        estruturar soluções.
+                      </Typography>
                     </CardContent>
                   </Card>
                 </TimelineContent>
@@ -203,15 +210,19 @@ export default function Home() {
                         06/22 - 08/23
                       </Typography>
                     </CardHeader>
-                    <CardContent>
-                      Meu primeiro trabalho, desafiador mas gratificante. Éramos
-                      uma equipe de duas pessoas resolvendo problemas reais de
-                      uma empresa que reconhece a importância da tecnologia.
-                      <br />
-                      Tinhamos bastante liberdade técnica e responsabilidades,
-                      então durante meu tempo na Mervil aprendi muito sobre
-                      arquitetura de software, redes, manutenção de servidor e
-                      levantamento de requisitos.
+                    <CardContent className="flex flex-col gap-2">
+                      <Typography>
+                        Meu primeiro trabalho, desafiador mas gratificante.
+                        Éramos uma equipe de duas pessoas resolvendo problemas
+                        reais de uma empresa que reconhece a importância da
+                        tecnologia.
+                      </Typography>
+                      <Typography>
+                        Tinhamos bastante liberdade técnica e responsabilidades,
+                        então durante meu tempo na Mervil aprendi muito sobre
+                        arquitetura de software, redes, manutenção de servidor e
+                        levantamento de requisitos.
+                      </Typography>
                     </CardContent>
                   </Card>
                 </TimelineContent>
@@ -238,12 +249,14 @@ export default function Home() {
                         02/20 - 12/22
                       </Typography>
                     </CardHeader>
-                    <CardContent>
-                      Cursei o ensino técnico em Análise e Desenvolvimento de
-                      Sistemas na ETEC, onde dei meus primeiros passos em
-                      desenvolvimento de software, aprendi a estudar sozinho e
-                      descobri de meu interesse pela área de tecnologia. (O
-                      plano inicial era ser legista criminal).
+                    <CardContent className="flex flex-col gap-2">
+                      <Typography>
+                        Cursei o ensino técnico em Análise e Desenvolvimento de
+                        Sistemas na ETEC, onde dei meus primeiros passos em
+                        desenvolvimento de software, aprendi a estudar sozinho e
+                        descobri de meu interesse pela área de tecnologia. (O
+                        plano inicial era ser legista criminal).
+                      </Typography>
                     </CardContent>
                   </Card>
                 </TimelineContent>
