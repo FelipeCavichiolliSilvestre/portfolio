@@ -14,6 +14,7 @@ export const typographyVariants = cva("", {
       h4: "text-h4 font-header",
       h5: "text-h5 font-header",
       h6: "text-h6 font-header",
+      s1: "text-s1 font-body text-light-foreground",
       p1: "text-p1 font-body",
       p2: "text-p2 font-body",
       p3: "text-p3 font-body",
@@ -41,6 +42,21 @@ export const typographyVariants = cva("", {
       variant: ["d1", "d2", "h1", "h2", "h3", "h4", "h5", "h6"],
       weight: "extrabold",
       class: "font-black",
+    },
+    {
+      variant: ["s1"],
+      weight: "regular",
+      class: "font-medium",
+    },
+    {
+      variant: ["s1"],
+      weight: "thin",
+      class: "font-normal",
+    },
+    {
+      variant: ["s1"],
+      weight: "bold",
+      class: "font-bold",
     },
     {
       variant: ["p1", "p2", "p3"],
