@@ -1,6 +1,8 @@
 import { Container } from "@/components/ui/Container";
 import { Typography } from "@/components/ui//Typography";
-import { cn } from "@/lib/utils";
+import { Breakpoint, cn } from "@/lib/utils";
+import { cva } from "class-variance-authority";
+import Link from "next/link";
 
 function Navbar({
   className,
@@ -18,11 +20,40 @@ function Navbar({
   );
 }
 
-function NavbarLogo({}) {
+const navbarLogoSpanVariants = cva("hidden", {
+  variants: {
+    expandAt: {
+      xs: "xs:inline-block",
+      sm: "sm:inline-block",
+      md: "md:inline-block",
+      lg: "lg:inline-block",
+      xl: "xl:inline-block",
+    },
+  },
+  defaultVariants: {
+    expandAt: "xs",
+  },
+});
+
+export type NavbarLogoProps = {
+  expandAt?: Breakpoint;
+};
+
+function NavbarLogo({ expandAt }: NavbarLogoProps) {
   return (
-    <Typography variant="h3" weight="extrabold" asChild>
-      <h1 className="text-main">
-        Felipe <span className="hidden sm:inline-block">Silvestre</span>
+    <Typography
+      variant="h3"
+      weight="extrabold"
+      className="text-main select-none"
+      asChild
+    >
+      <h1>
+        <Link href="/">
+          Felipe{" "}
+          <span className={cn(navbarLogoSpanVariants({ expandAt }))}>
+            Silvestre
+          </span>
+        </Link>
       </h1>
     </Typography>
   );

@@ -15,7 +15,7 @@ import { Navbar, NavbarLogo } from "@/components/ui/Navbar";
 function HomeNavbar() {
   return (
     <Navbar className="inline-flex justify-between items-center">
-      <NavbarLogo />
+      <NavbarLogo expandAt="xs" />
 
       <nav>
         <ul className="hidden md:inline-flex justify-between items-center gap-8">

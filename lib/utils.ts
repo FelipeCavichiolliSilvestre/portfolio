@@ -26,3 +26,5 @@ const twMerge = extendTailwindMerge({
 export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
 }
+
+export type Breakpoint = "xs" | "sm" | "md" | "lg" | "xl";
