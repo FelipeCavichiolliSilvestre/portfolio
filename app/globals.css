@@ -80,7 +80,7 @@
 
 @theme inline {
   /* Breakpoints */
-  --breakpoint-xm: 0;
+  --breakpoint-xs: 0;
   --breakpoint-sm: 600px;
   --breakpoint-md: 840px;
   --breakpoint-lg: 1280px;
