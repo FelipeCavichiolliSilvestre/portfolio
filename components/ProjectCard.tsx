@@ -1,5 +1,10 @@
-import { GithubIcon, SquareArrowOutUpRight } from "lucide-react";
+import {
+  GithubIcon,
+  SquareArrowOutUpRightIcon,
+  NewspaperIcon,
+} from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 import { Button } from "@/components/ui/Button";
 import {
   Card,
@@ -22,6 +27,7 @@ type ProjectCardProps = {
   };
   sourceCodeLink?: string;
   demoLink?: string;
+  blogLink?: string;
 };
 
 type Tag = {
@@ -37,6 +43,7 @@ function ProjectCard(props: ProjectCardProps) {
     description,
     sourceCodeLink: githubLink,
     demoLink: projectLink,
+    blogLink,
   } = props;
 
   return (
@@ -75,6 +82,18 @@ function ProjectCard(props: ProjectCardProps) {
             </a>
           </Button>
         )}
+        {blogLink !== undefined && (
+          <Button
+            size={projectLink === undefined ? "default" : "icon"}
+            asChild
+            aria-label={`Leia mais sobre ${title}`}
+          >
+            <Link href={blogLink}>
+              <NewspaperIcon />
+              {projectLink === undefined ? "Sobre" : ""}
+            </Link>
+          </Button>
+        )}
         {projectLink !== undefined && (
           <Button asChild aria-label={`Visitar ${title}`}>
             <a
@@ -82,7 +101,7 @@ function ProjectCard(props: ProjectCardProps) {
               target={projectLink.startsWith("#") ? "_self" : "_blank"}
             >
               Visitar{projectLink === "#top" ? "?" : ""}
-              <SquareArrowOutUpRight />
+              <SquareArrowOutUpRightIcon />
             </a>
           </Button>
         )}
